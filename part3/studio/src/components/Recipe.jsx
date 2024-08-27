@@ -1,9 +1,9 @@
 import { useState } from 'react';
 
 const RecipeAuthor = () => {
-   let authorLink = "";
-   let authorPhoto = "";
-   let authorName = "";
+   let authorLink = "https://www.simplyrecipes.com/hannah-zimmerman-5195688";
+   let authorPhoto = "https://www.simplyrecipes.com/thmb/wEZHhefYA6_eEQ2s_aga-MlrlwM=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/HannahZimmerman-6083410d49374410b1eca9969832c141.jpg";
+   let authorName = "Hannah Zimmerman";
 
    return (
       <div>
@@ -22,11 +22,11 @@ const RecipeIngredients = () => {
       <div>
          <h3>Recipe Ingredients</h3>
          <ul>
-            <li>{ingredients[0]}</li>
-            <li>{ingredients[1]}</li>
-            <li>{ingredients[2]}</li>
-            <li>{ingredients[3]}</li>
-            <li>{ingredients[4]}</li>
+            <li>{ingredients['semi-sweet chocolate']}</li>
+            <li>{ingredients['1/2 cup unsalted butter']}</li>
+            <li>{ingredients['1 cup powdered sugar']}</li>
+            <li>{ingredients['2 large eggs']}</li>
+            <li>{ingredients['1/4 cup all-purpose flour']}</li>
          </ul>
       </div>
    );
@@ -49,7 +49,7 @@ const RecipeDescription = () => {
 
 const RecipePhoto = () => {
    return (
-      <img src="" alt="" className="imageUpdates"/>
+      <img src="https://www.simplyrecipes.com/thmb/25H_Y2C1qNquReaVVGQ-JaHQrp4=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Simply-Recipes-Chocolate-Lava-Cake-LEAD-1-40caebef08424ee5ab014f7363216c1d.jpg" alt="" className="imageUpdates"/>
    );
 }
 
